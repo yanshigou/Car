@@ -1,0 +1,81 @@
+body{
+    font: 1em Arial, Helvetica, sans-serif;
+    color: #666;
+    margin: 0;
+    padding: 0;
+
+}
+
+p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/* 在clear类结束之前*/
+/* 为了将class为clear的元素的高度撑起来
+ * 不会收到子元素的浮动而产生影响*/
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.center{
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: left;
+}
+
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+.btn{
+    width: 4em;
+    height: 1.7em;
+    border-radius: 10px;
+    border: 0.1em solid #bb9b5e;
+    background: rgba(0,0,0,0);
+    margin: 1em 1em 0 0;
+    outline: none;
+}
+
+.container{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1300px;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+}
+
+.box{
+    width: 100px;
+    padding: 10px;
+    border: 2px solid #000;
+}
+

@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'userinfo',
+    'sale',
+    'buy'
 ]
 
 MIDDLEWARE = [
@@ -124,4 +127,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_FILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+# 让django中的用户信息使用userinfo应用下的Users实体表
+AUTH_USER_MODEL = 'userinfo.Users'

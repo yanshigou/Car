@@ -1,0 +1,36 @@
+#header{
+    height: 80px;
+}
+
+#header img{
+    height: 80px;
+}
+
+#header ul{
+    display: inline-block;
+}
+
+#header ul li{
+    display: inline-block;
+    line-height: 80px;
+    padding-left: 80px;
+    font-weight: bold;
+}
+
+#header p{
+    float: right;
+    line-height: 80px;
+    font-size: 18px;
+    color: #3f51b5;
+}
+
+#header p img{
+    width: 18px;
+    height: 18px;
+}
+
+#header p b{
+    border-left: 1px solid #000;
+    padding-left: 15px;
+    margin-left: 10px;
+}

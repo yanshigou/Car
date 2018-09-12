@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+</head>
+<body>
+{#    网页顶部#}
+    <div id="header" class="container">
+        {#    logo#}
+        <a href="">
+            <img src="{% static 'img/logo1.png' %}" alt="">
+        </a>
+{#        卖车,买车,服务保障,个人中心  列表#}
+        <ul>
+            <li>
+                <a href="#">卖车</a>
+            </li>
+            <li>
+                <a href="#">买车</a>
+            </li>
+            <li>
+                <a href="#">服务保障</a>
+            </li>
+            <li>
+                <a href="#">个人中心</a>
+            </li>
+        </ul>
+{#        登录信息 & 联系电话#}
+        <p>
+            <a href="#">
+                <img src="{% static 'img/user.png' %}" alt="">登录
+            </a>
+            <b>
+                <img src="{% static 'img/phone.png' %}" alt="">
+                联系电话: 800-820-8820
+            </b>
+        </p>
+    </div>
+
+{#    网页主体内容#}
+    <div id="main" class="container">
+{#        1.banner广告#}
+        <div class="sub-banner">
+{#            图片区域#}
+            <ul class="sub-img">
+                <li>
+                    <a href="#">
+                        <img src="{% static 'img/banner/001.jpg' %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="{% static 'img/banner/002.jpg' %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="{% static 'img/banner/003.jpg' %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="{% static 'img/banner/004.jpg' %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="{% static 'img/banner/001.jpg' %}" alt="">
+                    </a>
+                </li>
+            </ul>
+{#            导航区域#}
+            <ul class="sub-case">
+                <li class="sub-active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+{#        2.我要买车(左) & 为要卖车(右)#}
+        <div class="f1 container">
+{#            左:我要买车#}
+            <div class="f1-left">
+                <b>
+                    <a href="#">我要买车</a>
+                </b>
+            </div>
+{#            右:我要卖车#}
+        </div>
+{#        3.热卖车型#}
+{#        4.图片列表(里程,视野,...)#}
+    </div>
+{#    网页底部#}
+    <div id="footer" class="container"></div>
+</body>
+</html>

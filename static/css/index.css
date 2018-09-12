@@ -1,0 +1,59 @@
+/*轮播广告 div.sub-banner*/
+div.sub-banner{
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.sub-banner ul.sub-img{
+    position: absolute;
+    left: 0;
+}
+div.sub-banner ul.sub-img img{
+    width: 1300px;
+    height: 500px;
+}
+
+div.sub-banner ul.sub-img li{
+    float: left;
+    width: 1300px;
+}
+
+div.sub-banner ul.sub-case{
+    position: absolute;
+    right: 500px;
+    bottom: 20px;
+}
+
+div.sub-banner ul.sub-case li{
+    color: #fff;
+    width: 20px;
+    height: 25px;
+    background: #000;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #000;
+    margin-right: 20px;
+    float: left;
+}
+
+div.sub-banner ul.sub-case li.sub-active{
+    border-color: #f60;
+}
+
+div.f1 div.f1-left{
+    display: inline-block;
+    margin-top: 20px;
+    width: 650px;
+    box-sizing: border-box;
+    border-right: 1px solid gray;
+    height: 220px;
+    padding: 20px;
+}
+
+div.f1 div.f1-left b{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px dashed #f60;
+}
